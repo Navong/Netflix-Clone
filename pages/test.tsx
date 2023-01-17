@@ -5,6 +5,7 @@ import requests from '../utils/request'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Row from '../components/Row'
+import Rowtest from '../components/Rowtest'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -34,20 +35,21 @@ const Home = ({netflixOriginals,
         <link rel="icon" href="/favicon.ico" />
       </Head>
  
-      <Header />
+      {/* <Header /> */}
       <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
-        <Banner netflixOriginals={netflixOriginals}/>
+        {/* <Banner netflixOriginals={netflixOriginals}/> */}
       {/* Banner */}
         <section className='space-y-24'>
-          <Row title="Trending Now" movies={trendingNow} />
-          <Row title="Top Rated" movies={topRated} />
-          <Row title="Action Thrillers" movies={actionMovies} />
+          <Rowtest title="Trending Now" movies={trendingNow} />
+          
+          <Rowtest title="Top Rated" movies={topRated} />
+          <Rowtest title="Action Thrillers" movies={actionMovies} />
           {/* My List */}
 
-          <Row title="Comedies" movies={comedyMovies} />
+          {/* <Row title="Comedies" movies={comedyMovies} />
           <Row title="Scary Movies" movies={horrorMovies} />
           <Row title="Romance Movies" movies={romanceMovies} />
-          <Row title="Documentaries" movies={documentaries} />
+          <Row title="Documentaries" movies={documentaries} /> */}
         </section>
       </main>
     </div>
