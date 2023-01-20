@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Row from '../components/Row'
 import Rowtest from '../components/Rowtest'
+import LoginTest from './LoginTest'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -34,23 +35,19 @@ const Home = ({netflixOriginals,
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <LoginTest/>
  
       {/* <Header /> */}
       <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
         {/* <Banner netflixOriginals={netflixOriginals}/> */}
       {/* Banner */}
-        <section className='space-y-24'>
+        {/* <section className='space-y-24'>
           <Rowtest title="Trending Now" movies={trendingNow} />
           
           <Rowtest title="Top Rated" movies={topRated} />
           <Rowtest title="Action Thrillers" movies={actionMovies} />
-          {/* My List */}
-
-          {/* <Row title="Comedies" movies={comedyMovies} />
-          <Row title="Scary Movies" movies={horrorMovies} />
-          <Row title="Romance Movies" movies={romanceMovies} />
-          <Row title="Documentaries" movies={documentaries} /> */}
-        </section>
+        </section> */}
       </main>
     </div>
   )
